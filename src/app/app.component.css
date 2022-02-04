@@ -1,6 +1,25 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: #96668F;
+    background-color: #9879DB;
     width: 100%;
+  }
+
+  .container {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: red;
+  }
+
+  .add-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    background-color: #90A4F2;
+    width: 500px;
+    cursor: pointer;
   }

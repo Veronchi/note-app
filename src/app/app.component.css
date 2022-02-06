@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+p {
+  line-height: 60px;
+  color: #fff;
+}
+
 .container {
   max-width: 500px;
   margin: 0 auto;

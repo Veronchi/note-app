@@ -1,9 +1,7 @@
 <app-header class="header"></app-header>
 
 <div class="container">
-  
+  <app-notes *ngFor="let n of notes" [note]="n"></app-notes>
   
 </div>
 <app-add-btn class="add-btn"></app-add-btn>
-  
-

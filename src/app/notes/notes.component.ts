@@ -1,13 +1,20 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Note } from '../app.component';
-
+ interface Note {
+  title: string
+  text: string
+  id?: number
+}
 @Component({
   selector: 'app-notes',
   templateUrl: './notes.component.html',
   styleUrls: ['./notes.component.css']
 })
 export class NotesComponent implements OnInit {
-  @Input() note!: Note
+
+  notes: Note[] = [
+    {title: 'Reminder', text: 'reminder text', id: 1},
+    {title: 'Hello', text: 'Hello World', id: 2}
+  ]
 
   constructor() { }
 

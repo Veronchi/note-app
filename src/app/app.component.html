@@ -1,9 +1,8 @@
 <header class="header">
-  <p>Note Mate</p>
+  <p routerLink="/">Note Mate</p>
 </header>
 
 <div class="container">
-  <app-notes *ngFor="let n of notes" [note]="n"></app-notes>
-  <app-note-form></app-note-form>
+  <router-outlet></router-outlet>
 </div>
-<app-add-btn class="add-btn"></app-add-btn>
+<app-add-btn class="add-btn" *ngIf="state"></app-add-btn>
